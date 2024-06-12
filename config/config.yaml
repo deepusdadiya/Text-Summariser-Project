@@ -5,3 +5,8 @@ data_ingestion:
   source_URL: https://github.com/deepusdadiya/Text-Summariser-Project/raw/main/samsumdata.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt      # if all files are present, it will return status as True
+  ALL_REQUIRED_FILES: ["train", "test", "validation"]       # all these train, test and validation files are required before further training
