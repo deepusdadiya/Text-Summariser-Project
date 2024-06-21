@@ -14,4 +14,9 @@ data_validation:
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/samsumdata/samsum_dataset
-  tokenizer_name: google/pegasus-cnn_dailymail    # all these train, test and validation files are required before further training
+  tokenizer_name: google/pegasus-cnn_dailymail 
+  
+model_trainer:
+  root_dir: artifacts/model_trainer
+  data_path: artifacts/data_transformation/samsum_dataset
+  model_ckpt: google/pegasus-cnn_dailymail          # model checkpoint
