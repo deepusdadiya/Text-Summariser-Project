@@ -53,10 +53,10 @@ except Exception as e:
     raise e
 
 
-# import tensorflow as tf
-#
-# # Your TensorFlow code here
-# print("TensorFlow version:", tf.__version__)
-#
-# # Check for GPU/Metal support
-# print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+import tensorflow as tf
+
+# Your TensorFlow code here
+print("TensorFlow version:", tf.__version__)
+
+# Check for GPU/Metal support
+print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
