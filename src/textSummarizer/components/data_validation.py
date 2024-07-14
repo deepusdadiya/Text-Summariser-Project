@@ -1,6 +1,6 @@
 import os
-from textSummarizer.logging import logger
-from textSummarizer.entity import DataValidationConfig
+from src.textSummarizer.logging import logger
+from src.textSummarizer.entity import DataValidationConfig
 
 
 class DataValiadtion:
@@ -25,7 +25,7 @@ class DataValiadtion:
                     with open(self.config.STATUS_FILE, 'w') as f:
                         f.write(f"Validation status: {validation_status}")
 
-            return validation_status
+            return validation_status # type: ignore
         
         except Exception as e:
             raise e
